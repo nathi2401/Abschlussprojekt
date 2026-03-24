@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: Inter, "Segoe UI Variable", system-ui, sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(67, 199, 255, 0.08), transparent 22%),
+    linear-gradient(180deg, #0f172a 0%, #0b1220 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  color: #e6eef8;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(67, 199, 255, 0.08), transparent 22%),
+    linear-gradient(180deg, #0f172a 0%, #0b1220 100%);
+}
+
+::selection {
+  background: rgba(67, 199, 255, 0.25);
+  color: #ffffff;
+}
+
+.recharts-default-tooltip {
+  border-radius: 14px !important;
+  border: 1px solid #24354e !important;
+  background: rgba(15, 23, 42, 0.98) !important;
+  box-shadow: 0 10px 24px rgba(2, 6, 23, 0.28) !important;
+}
